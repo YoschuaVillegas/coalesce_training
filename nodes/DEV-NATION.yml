@@ -1,0 +1,78 @@
+steps:
+  NATION-c60252ca-11f8-4fed-b78b-d5b34ce95d52:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationName: DEV
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 2febae23-dc75-44c7-8943-529e8ec884a1
+              stepCounter: c60252ca-11f8-4fed-b78b-d5b34ce95d52
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: N_NATIONKEY
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 375c48b8-2896-4795-abb0-18e8a8cd076b
+              stepCounter: c60252ca-11f8-4fed-b78b-d5b34ce95d52
+            config: {}
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: N_NAME
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: f3afec24-b375-41e8-a62a-6faa3493290d
+              stepCounter: c60252ca-11f8-4fed-b78b-d5b34ce95d52
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: N_REGIONKEY
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 0907f81b-c171-45ba-a1ad-afc90dbc77f5
+              stepCounter: c60252ca-11f8-4fed-b78b-d5b34ce95d52
+            config: {}
+            dataType: VARCHAR(152)
+            defaultValue: ""
+            description: ""
+            name: N_COMMENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('DEV', 'NATION') }}
+      name: NATION
+      schema: ""
+      sqlType: Source
+      table: NATION
+      type: sourceInput
+    stepCounter: c60252ca-11f8-4fed-b78b-d5b34ce95d52
